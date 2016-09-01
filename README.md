@@ -1,1 +1,1 @@
-Evaluaciones de practicas de profesionalizacion
+Laboratorios y evaluaciones de practicas de profesionalizacion
