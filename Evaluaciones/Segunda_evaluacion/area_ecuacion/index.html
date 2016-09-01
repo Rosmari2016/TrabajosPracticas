@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+</head>
+<body>
+	<form method="POST" action="calculo.php">
+		<h2>Area y ecuacion</h2><br>
+		<input type="radio" name="operador" value="area"  checked onclick="mostrarArea()">Area<br>
+		<div id="area" >
+			Lado 1<input type="text" name="l1" autofocus><br>
+			Lado 1<input type="text" name="l2"><br>
+		</div>
+		<input type="radio" name="operador" value="ecuacion" onclick="mostrarEcuacion()">Ecuacion<br>
+		<div id="ecuacion" style="display:none;">
+			Valor a<input type="text" name="valorA" autofocus><br>
+			Valor b<input type="text" name="valorB"><br>
+			Valor c<input type="text" name="valorC"><br>
+		</div><br>
+		<input type="submit" value="Calcular">
+	</form>
+
+	<script type="text/javascript">
+		function mostrarArea(){
+			
+			document.getElementById('area').style.display='block';
+			document.getElementById('ecuacion').style.display='none';
+		}
+		function mostrarEcuacion(){
+			
+			document.getElementById('area').style.display='none';
+			document.getElementById('ecuacion').style.display='block';
+		}
+	</script>
+</body>
+</html>
